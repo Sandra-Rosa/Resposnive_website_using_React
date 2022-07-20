@@ -1,38 +1,172 @@
+.body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#div1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.girl {
+  flex: 1;
+  width: 30vw;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left:0;
+}
+
+.images {
+  flex: 0.4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.images .icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:0;
+  padding:0;
+  cursor:pointer;
+}
+
+.content .resume {
+  max-width: 300px;
+  cursor: pointer;
+  background-color: CE203B; 
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:20px;
+  display:flex;
+  justify-content: space-between;
+  display:grid;
+  align-items:center;
+  float:left;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.App-link {
-  color: #61dafb;
+.content .heading {
+  color: black;
+  margin-bottom: 20px;
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 110%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content .paragraph {
+  font-family: 'Archivo';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 110%;
+
+color: #000000;
+}
+.nav{
+  font-family: 'Allison';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 105%;
+
+color: rgba(206, 32, 59, 0.4);
+}
+@media screen and (max-width:900px){
+  .main {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .images {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:0 8%;
+  }
+  .images .icon{
+    margin:20px 20px;
+    max-width:50px;
+
+  }
+  .content .resume{
+    align-self:center;
+
+  }
+  .girl{
+    width:90vw;
+
+  }
+  .content{
+    padding:8%;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width:600px){
+  .nav{
+    font-size:25px;
+  }
+  .content .heading{
+    font-size:35px;
+  }
+  .content .paragraph{
+   font-size:20px;
+  }
+  .girl{
+    width:90vw;
+
+  }
+  .images .icon{
+    max-width:50px;
+  }
+}
+@media screen and (max-width:400px){
+  .nav{
+    font-size:20px;
+  }
+  .content .heading{
+    font-size:30px;
+  }
+  .content .paragraph{
+   font-size:15px;
+  }
+  .girl{
+    width:90vw;
+
+  }
+  .content .resume{
+    max-width: 200px;
+  }
+  .images .icon{
+    max-width:50px;
+
   }
 }
