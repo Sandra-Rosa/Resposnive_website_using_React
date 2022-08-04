@@ -1,5 +1,5 @@
 # Responsive personal website using React JS
-<img src='https://github.com/Sandra-Rosa/personalwebsite/blob/main/sandra%20-%20Google%20Chrome%2003-06-2022%2007_40_05%20PM.png?raw=true'>
+<img src='https://github.com/Sandra-Rosa/Resposnive_website_using_React/blob/4c0d1eca02d8d2e585e7166ff79c8059d83252cf/Responsive-website.jpeg?raw=true'>
 <a href="https://main--fabulous-alpaca-3c8782.netlify.app/" target="_blank">View personal website</a>
 
 
